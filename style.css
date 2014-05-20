@@ -7,10 +7,12 @@
 	height:				5em;
 }
 #mainContent{
-	font-family:			helvetica;
+	font-family:		helvetica;
+	width:					95%;
+   margin:0 auto;
 }
 h3 {
-  color:  #6DA046;
+  color:  #4A5E2C;
 	border-bottom:	medium solid #3F401E;
 }
 
