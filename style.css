@@ -4,3 +4,21 @@ h3 {
 h4{
   color:  blue;
 }
+.pageFrame{
+	max-width:	960px;
+}
+#titleName{
+	color:	#3f5657;
+	font-size:	3em;
+}
+.banner{
+	background-color:	#d2c8bd;
+	height:				5em;
+}
+nav>a{
+	background-color:	#3f5657;
+	border-radius:		.75em;
+	padding:			.5em;
+	color:				white;
+}
+
