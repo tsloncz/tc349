@@ -1,6 +1,19 @@
+.pageFrame{
+   width:804px;
+   margin:0 auto;
+}
+.banner{
+	background-color:	#d2c8bd;
+	height:				5em;
+}
+#mainContent{
+	font-family:		helvetica;
+	width:					95%;
+   margin:0 auto;
+}
 h3 {
-  color:  green;
+  color:  #4A5E2C;
+	border-bottom:	medium solid #3F401E;
 }
-h4{
-  color:  blue;
-}
+
+
