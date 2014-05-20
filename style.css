@@ -1,18 +1,22 @@
 .pageFrame{
-   width:804px;
-   margin:0 auto;
+   width:		804px;
+   margin:	0 auto;
+}
+img{
+	border-top-left-radius:		1em;
+	border-top-right-radius:	1em;
 }
 .banner{
 	background-color:	#d2c8bd;
-	height:				5em;
+	height:						5em;
 }
 #mainContent{
 	font-family:		helvetica;
 	width:					95%;
-   margin:0 auto;
+  margin:					0 auto;
 }
 h3 {
-  color:  #4A5E2C;
+  color: 					#69863E;
 	border-bottom:	medium solid #3F401E;
 }
 
