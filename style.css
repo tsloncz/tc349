@@ -1,24 +1,17 @@
-h3 {
-  color:  green;
-}
-h4{
-  color:  blue;
-}
 .pageFrame{
-	max-width:	960px;
-}
-#titleName{
-	color:	#3f5657;
-	font-size:	3em;
+   width:804px;
+   margin:0 auto;
 }
 .banner{
 	background-color:	#d2c8bd;
 	height:				5em;
 }
-nav>a{
-	background-color:	#3f5657;
-	border-radius:		.75em;
-	padding:			.5em;
-	color:				white;
+#mainContent{
+	font-family:			helvetica;
 }
+h3 {
+  color:  #6DA046;
+	border-bottom:	medium solid #3F401E;
+}
+
 
