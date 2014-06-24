@@ -107,7 +107,8 @@ header{
 	padding:		10px;
 }
 #mapLocation{
-	background:	#e3e3e3;
+	background-image:	url(../img/map.png);
+	/*background:	#e3e3e3;*/
 	padding:		40px;
 }
 h1{
