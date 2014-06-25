@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tim Sloncz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+			<header>
+				<h1>Tim Sloncz</h1>
+				<h2>Web Programmer, Michigan State Univesity</h2>
+			</header>
+			<div id="mapLocation" data-0="background-image:url(img/BWmap.jpg);opacity:.5;" data-300="background-image:url(img/map.jpg);opacity:1;" data-500="opacity:.5;">
+				
+			</div>
+			<!-- useful to have nav first for non standard browsing
+				example: screen readers: Figure out where to go first -->
+			<nav data-0="position:absolute;top:700px;" data-700="position:absolute;top:700px" data-1800="position:absolute;top:1850px;">
+				<ul>
+					<li><a href="#about">about</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#something">something</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+				
+			</nav>
+			<article>
+				<section id="about">
+					<h3>About Tim</h3>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</section>
+				<section id="portfolio">
+					<h3>Portfolio</h3>
+					<ul class="gallery">
+						<li><img alt="portfolio" src="img/cpp.jpeg"></li>
+						<li><img alt="portfolio" src="img/java.jpeg"></li>
+						<li><img alt="portfolio" src="img/javaScript.jpeg"></li>
+						<li><img alt="portfolio" src="img/php.jpeg"></li>
+						<li><img alt="portfolio" src="img/python.jpeg"></li>
+				</section>
+				<section id="something ">
+					<h3>something</h3>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</section>
+				<section id="contact">
+					<h3>Contact</h3>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</section>
+			</article>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/skrollr.menu.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    		<script type="text/javascript">
+				var s = skrollr.init(/*other stuff*/);
+
+				//The options (second parameter) are all optional. The values shown are the default values.
+				skrollr.menu.init(s, {
+				    //skrollr will smoothly animate to the new position using `animateTo`.
+				    animate: true,
+
+				    //The easing function to use.
+				    easing: 'sqrt',
+
+				    //Multiply your data-[offset] values so they match those set in skrollr.init
+				    scale: 2,
+
+				    //How long the animation should take in ms.
+				    duration: function(currentTop, targetTop) {
+				        //By default, the duration is hardcoded at 500ms.
+				        return 500;
+
+				        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+				        //return Math.abs(currentTop - targetTop) * 10;
+				    },
+
+				    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+				    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+				    /*handleLink: function(link) {
+				        return 400;//Hardcoding 400 doesn't make much sense.
+				    }*/
+				});
+    		</script>
+    </body>
+</html>
