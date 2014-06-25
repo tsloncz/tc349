@@ -146,9 +146,12 @@ nav ul{
 nav a{
 	color:	#424242;
 	text-decoration:	none;
-	display:	block;
+	display:	inline-block;
 	padding:	10px;
+}
+nav li{
 	border-top:	1px	solid	#e3e3e3;
+	
 }
 nav a:hover{
 	background:	#e3e3e3;
@@ -273,8 +276,16 @@ nav a:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media (max-width: 600px) {
     /* Style adjustments for viewports that meet the condition */
+
+		nav{
+			float:	none;
+			width:	auto;
+		}
+		article{
+			margin-left:	20px;
+		}
 }
 
 @media print,
