@@ -98,12 +98,31 @@ textarea {
    ========================================================================== */
 
 body{
+	height:	1000px;
 	border-top:	10px solid #424242;
 }
 
 header{
+	align:			center;
 	width:			100%;
-	min-height:	115px;
+	height:			115px;
+	padding:		10px;
+}
+footer{
+	align:			center;
+	width:			100%;
+	height:			115px;
+	padding:		10px;
+}
+#contact h3{
+	color:	white;
+}
+#contact{
+	margin-top:	100px;
+	margin-left:	0;
+	align:			center;
+	width:			100%;
+	height:			115px;
 	padding:		10px;
 }
 #mapLocation{
@@ -117,12 +136,20 @@ h1{
 h2{
 	font-weight:	normal;
 }
+h3{
+	color:	#18453B;
+}
+}
 h1, h2{
 	margin:	0;
 	color:	#fff;
 }
+header h3{
+	margin:	0;
+	color:	#efefef;
+}
 nav{
-	width:	450px;
+	width:				450px;
 	margin-left:	500px;
 }
 nav li{
@@ -133,13 +160,13 @@ article{
 	margin-left:	30px;
 }
 .gallery li{
-	display:	inline-block;
-	height:	250px;
-	width:	300px;
-	margin:	0	2%	2%	0;
-	border:	5px	solid	#fff;
-	box-shadow:	0	0	10px	#ccc;
-	transition:	border-color	.5s;
+	display:			inline-block;
+	height:				250px;
+	width:				300px;
+	margin:				0	2%	2%	0;
+	border:				5px	solid	#fff;
+	box-shadow:		0	0	10px	#ccc;
+	transition:		border-color	.5s;
 }
 .gallery li:hover{
 	border-color:	#aeccf9;
@@ -148,15 +175,16 @@ nav ul{
 	margin: 10px 0 0 4px;
 }
 nav a{
-	color:	white;
-	font-size:	120%;
+	color:						white;
+	font-size:				120%;
 	text-decoration:	none;
-	display:	block;
-	padding:	10px;
-	border-top:	1px	solid	#e3e3e3;
+	display:					block;
+	padding:					6px;
+	border-top:				1px	solid	#e3e3e3;
 }
-nav a:hover{
-	background:	#e3e3e3;
+nav li:hover{
+	box-shadow:		0	0	5px	#fff;
+	transition:		border-color	.5s;
 }
 
 
@@ -278,7 +306,7 @@ nav a:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     /* Style adjustments for viewports that meet the condition */
 		header{
 			width:			100%;
@@ -288,10 +316,10 @@ nav a:hover{
 			padding-top:	10px;
 		}
 		nav{
-			display:	block;
-			width:	450px;
+			display:			block;
+			width:				410px;
 			margin-left:	0px;
-			margin-top:		50px;
+			margin-top:		45px;
 		}
 		article{
 			margin-left:	20px;
